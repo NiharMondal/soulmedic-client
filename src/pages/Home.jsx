@@ -1,7 +1,8 @@
 import React from 'react'
 import {Banner, Services} from '../components/@home'
-import DoctorsTips from '../components/@home/DoctorsTips/DoctorsTips'
+
 import About from '../components/@home/faq/About'
+import DoctorsTips from '../components/DoctorsTips'
 
 
 export default function Home() {
