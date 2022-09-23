@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+   html,
+   body {
+      font-family: "Lato", sans-serif;
+   }
+
+   h1 {
+      @apply text-xl md:text-3xl font-bold text-slate-600;
+   }
+   h2 {
+      @apply text-sm md:text-lg font-semibold py-2;
+   }
+   h5 {
+      @apply text-sm md:text-lg font-bold text-slate-600;
+   }
+   h6 {
+      @apply text-[17px] font-semibold text-slate-700;
+   }
+}
+@layer components {
+   .banner {
+      height: "24rem";
+   }
 }
