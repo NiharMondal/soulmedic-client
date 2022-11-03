@@ -1,11 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import CustomNavbar from "./components/CustomNavbar";
+import Footer from "./components/Footer/Footer";
 import { Doctors, Home,Appointment,Blog,Contact,Events } from "./pages";
 
 export default function App() {
    return (
       <main>
-         <Navbar />
+         <CustomNavbar/>
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/doctors" element={<Doctors />} />
@@ -14,6 +15,7 @@ export default function App() {
             <Route path="/events" element={<Events />} />
             <Route path="/contact" element={<Contact />} />
          </Routes>
+         <Footer/>
       </main>
    );
 }
