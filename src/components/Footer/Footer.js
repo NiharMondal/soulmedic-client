@@ -10,8 +10,8 @@ import Map from "./Map";
 
 export default function Footer() {
   return (
-    <div className="px-4 pt-12 lg:container text-slate-500 ">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 mb-4">
+    <div className=" pt-12 text-slate-500 bg-[#F6F6F6]">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 mb-4 container mx-auto">
         <div className="flex flex-col">
           <h2 className=" before:absolute before:bg-gray-200 before:h-px before:w-1/3 before:bottom-0 relative pb-2">
             HEALTH SOLUTIONS

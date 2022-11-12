@@ -1,4 +1,4 @@
-import { AiFillVideoCamera, AiFillSound, AiFillMessage } from "react-icons/ai";
+import { AiFillVideoCamera, AiFillSound} from "react-icons/ai";
 import {MdMessage} from 'react-icons/md'
 import doctorAndPatient from '../../assets/blog/patient_and_doctor.jpg'
 import waitingRoom from '../../assets/blog/waiting room.jpg'

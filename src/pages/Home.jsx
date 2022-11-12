@@ -14,7 +14,7 @@ export default function Home() {
    return (
       <React.Fragment>
          <Banner />
-         <section className=" px-4 lg:container">
+         <section className="container mx-auto">
             <Services />
             <About />
             <DoctorsTips />
