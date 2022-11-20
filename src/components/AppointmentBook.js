@@ -29,7 +29,7 @@ function AppointmentBook() {
           <span className="bg-[#0390B2] text-white  p-3 mr-3 ">
             <FiEdit2 />
           </span>
-          Phone: +12002582145{" "}
+          Online Form: <span className='text-[#0390b2] ml-2'> Fill out this form</span>
         </p>
       </div>
       <div className="py-8">

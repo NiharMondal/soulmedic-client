@@ -1,12 +1,16 @@
 import { BsArrowUpRightSquareFill } from "react-icons/bs";
-import {
-  FaUserAlt,
-  FaRegCalendarAlt,
-} from "react-icons/fa";
+import { FaUserAlt, FaRegCalendarAlt } from "react-icons/fa";
 import { TbMessages } from "react-icons/tb";
 import blogPicture from "../../assets/blog-new-8.jpg";
-import { contactInfo, healthData } from "../../utils/dummyData/services";
-import Map from "./Map";
+import {  healthData } from "../../utils/dummyData/services";
+import { ContactInfo } from "../ContactInfo";
+import Map from "../Map";
+
+const containerStyle = {
+  width: "100%",
+  height: "300px",
+};
+
 
 export default function Footer() {
   return (
@@ -62,22 +66,10 @@ export default function Footer() {
             LOCATION MAP
           </h2>
           <div className="mt-8">
-            <Map />
+            <Map containerStyle={containerStyle} />
           </div>
         </div>
-        <div>
-          <h2 className=" before:absolute before:bg-gray-200 before:h-px before:w-1/3 before:bottom-0 relative pb-2">
-            CONTACT INFO
-          </h2>
-          <div className="grid grid-cols-1 divide-y mt-8">
-            {contactInfo.map((contact, index) => (
-              <p key={index} className="flex items-center py-3">
-                <span className="mr-4">{contact.icon}</span>
-                {contact.contact}
-              </p>
-            ))}
-          </div>
-        </div>
+        <ContactInfo header="CONTACT INFO" t_color="500" />
       </div>
       <div className="py-4 border-t-2 border-gray-200 md:flex md:justify-center">
         Copyright © {new Date().getFullYear()} Soulmedic Theme All Rights

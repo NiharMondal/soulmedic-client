@@ -3,8 +3,8 @@ import { topTrends, topTrendsTwo } from "../../utils/dummyData/services";
 import souldemicApp from '../../assets/soulmedic-app.jpg'
 export default function TopTrends() {
    return (
-      <React.Fragment>
-         <h1>Top Trends - Health Talks</h1>
+      <div className="pt-6">
+         <h1 className="py-4">Top Trends - Health Talks</h1>
          <div className=" grid grid-cols-1 lg:grid-cols-2 py-4 text-[#72BCD7] ">
             <div className="grid grid-cols-2 gap-x-4 gap-y-2 mb-6 lg:mb-0 ">
                {topTrends.map((trend, index) => (
@@ -32,6 +32,6 @@ export default function TopTrends() {
                </div>
             </div>
          </div>
-      </React.Fragment>
+      </div>
    );
 }
