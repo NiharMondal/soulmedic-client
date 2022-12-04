@@ -18,8 +18,8 @@ const OurDoctor = ({ doctor }) => {
           <span className="bg-[#0390B2] text-white  p-3 mr-3">
             {doctor.icon}
           </span>
-          <span>{doctor.name} </span>
-          <span className="text-slate-400">MBBS</span>
+          <span>{doctor.name}, </span>
+          <span className="text-slate-400 ml-1">MBBS</span>
         </p>
         <p className=" py-5 border-b">{doctor.info}</p>
         <p>{doctor.sector}</p>

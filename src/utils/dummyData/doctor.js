@@ -9,7 +9,7 @@ export const CHEIF_DOCTORS = [
   {
    pictur: item1,
     icon: <FaUserMd />,
-    name: "David",
+    name: "Melena",
     info: "Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd pamade eleifend sapien.",
     sector: 'Gastroenterologist',
     email: 'yourname@domain.com'
@@ -25,7 +25,7 @@ export const CHEIF_DOCTORS = [
   {
    pictur: item3,
     icon: <FaUserMd />,
-    name: "David",
+    name: "Davies",
     info: "Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd pamade eleifend sapien.",
     sector: 'Gastroenterologist',
     email: 'yourname@domain.com'
@@ -33,7 +33,7 @@ export const CHEIF_DOCTORS = [
   {
    pictur: item4,
     icon: <FaUserMd />,
-    name: "David",
+    name: "Rachel",
     info: "Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd pamade eleifend sapien.",
     sector: 'Gastroenterologist',
     email: 'yourname@domain.com'
@@ -43,7 +43,7 @@ export const G_DOCTOR = [
   {
     pictur: item5,
     icon: <FaUserMd />,
-    name: "David",
+    name: "Lily",
     info: "Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd pamade eleifend sapien.",
     sector: "Gastroenterologist",
     email: "yourname@domain.com",
@@ -51,7 +51,7 @@ export const G_DOCTOR = [
   {
     pictur: item6,
     icon: <FaUserMd />,
-    name: "David",
+    name: "Florina",
     info: "Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd pamade eleifend sapien.",
     sector: "Gastroenterologist",
     email: "yourname@domain.com",
