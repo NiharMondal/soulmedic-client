@@ -5,9 +5,11 @@ import { BsSoundwave } from "react-icons/bs";
 import { Loading } from "../components/Loading";
 import { useNavigate } from "react-router-dom";
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
+
+
 export default function Blog() {
   const navigate = useNavigate()
-  const [blogs, setblogs] = useState();
+  const [blogs, setblogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -33,7 +35,7 @@ export default function Blog() {
   };
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-y-12 py-12">
         {blogs &&
           blogs.map((item, index) => {
             const icon = [

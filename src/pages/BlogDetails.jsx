@@ -34,7 +34,6 @@ const BlogDetails = () => {
       {blog &&
         blog.map((item, index) => {
          const subTitle = item?.Sections.section[2]?.Content;
-         console.log(subTitle);
          return (
            <div key={index}>
              <img

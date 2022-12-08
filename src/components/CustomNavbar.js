@@ -3,7 +3,7 @@ import { Disclosure } from "@headlessui/react";
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
 import {AiOutlineClose} from 'react-icons/ai'
 import { NAVLINK } from "../utils/Nav";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 function classNames(...classes) {
@@ -46,7 +46,9 @@ export default function CustomNavbar() {
                <div className="flex justify-between items-center container ">
                  <div className="flex items-center">
                    <h1>
-                     SOUL <span className="text-[#4BBCD7]">MEDIC</span>
+                     <Link to='/'>
+                       SOUL <span className="text-[#4BBCD7]">MEDIC</span>
+                     </Link>
                    </h1>
                  </div>
                  <div className="hidden lg:block sm:ml-6  ">
