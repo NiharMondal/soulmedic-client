@@ -29,7 +29,7 @@ export default function Events() {
       <div className="grid grid-cols-1 gap-4 lg:gap-12">
         {events &&
           events.map((ev, index) => (
-            <div className="grid lg:grid-cols-3 gap-4 " key={index}>
+            <div className="grid lg:grid-cols-3 gap-4 border-b-2 " key={index}>
               <img
                 src={ev.ImageUrl}
                 alt={ev.ImageAlt}
@@ -47,7 +47,7 @@ export default function Events() {
                     {ev?.Sections?.section[0].Content?.slice(0, 950)}
                   </small>
                 </p>
-                <button className=" py-2 px-4 bg-[#51BED8] text-white font-bold">
+                <button className=" py-2 px-4 mb-4 bg-[#51BED8] text-white font-bold">
                   FIND OUT MORE
                 </button>
               </div>

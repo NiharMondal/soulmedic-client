@@ -33,7 +33,7 @@ export default function Blog() {
     navigate(`/blog/${id}`);
   };
   return (
-    <div className="container mx-auto">
+    <React.Fragment>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4  py-12 ">
         {blogs &&
           blogs.map((item, index) => {
@@ -46,25 +46,22 @@ export default function Blog() {
               "Nov 22",
               "Jan 30",
               "Mar 13",
-              "Jun 18",
-              "Feb 2",
-              "May 26",
             ];
-            const year = ["2013", "2020", "2017", "2021", "2022", "2019"];
-            const random = Math.floor(Math.random() * 6);
-            const randomIcon = Math.floor(Math.random() * 3);
+            const year = ["2013", "2020", "2017", ];
+            const random = Math.floor(Math.random() * 3);
+            
 
             return (
-              <div className="grid grid-cols-4 gap-2" key={index}>
+              <div className="grid grid-cols-6 gap-x-1" key={index}>
                 <div className="px-2">
-                  <p className="text-4xl text-[#4BBCD7]    hover:text-inherit hover:cursor-pointer">
-                    {icon[randomIcon]}
+                  <p className="text-4xl text-[#4BBCD7] hover:text-inherit hover:cursor-pointer">
+                    {icon[random]}
                   </p>
                   <p className="py-2">
                     {time[random]} <br /> <span> {year[random]}</span>
                   </p>
                 </div>
-                <div className="col-span-3">
+                <div className="col-span-5">
                   <img
                     src={item.ImageUrl}
                     alt={item.ImageAlt}
@@ -73,7 +70,7 @@ export default function Blog() {
                   <h2>{item.Title.slice(0, 20)}..</h2>
                   <div className="grid justify-items-end ">
                     <button
-                      className=" flex items-center text-[#4BBCD7] font-bold px-4 py-2 border transition  duration-300 ease-in-out border-[#4BBCD7] hover:bg-[#4BBCD7] hover:text-white"
+                      className=" flex items-center text-[#4BBCD7] font-bold px-4 py-2 border transition  duration-300 ease-in-out border-[#4BBCD7] hover:bg-[#4BBCD7] hover:text-slate-200"
                       onClick={() => seeMore(item.Id)}
                     >
                       Read more{" "}
@@ -88,6 +85,6 @@ export default function Blog() {
           })}
       </div>
       {loading && <Loading />}
-    </div>
+    </React.Fragment>
   );
 }
