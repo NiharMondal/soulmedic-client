@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <div className="container mx-auto py-12 ">
       <div className="pb-4">
-        <Map containerStyle={containerStyle} />
+        <Map containerStyle={containerStyle}/>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-8 py-6">
         <div className="col-span-2">

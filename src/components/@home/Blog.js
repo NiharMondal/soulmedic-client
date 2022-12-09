@@ -34,7 +34,7 @@ export default function Blog() {
   };
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4  py-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4  py-12 ">
         {blogs &&
           blogs.map((item, index) => {
             const icon = [

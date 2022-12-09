@@ -24,7 +24,6 @@ export default function Events() {
     };
     fetchData();
   }, []);
-  console.log(events);
   return (
     <div className="container mx-auto py-12 text-slate-500">
       <div className="grid grid-cols-1 gap-4 lg:gap-12">

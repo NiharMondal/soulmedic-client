@@ -63,19 +63,19 @@ function AppointmentForm() {
             <div className="grid grid-cols-3 content-start  gap-4">
               <div className="">
                 <input type="radio" id="male" name="sex" value="male" />
-                <label for="male" className=" ml-4">
+                <label htmlFor="male" className=" ml-4">
                   Male
                 </label>
               </div>
               <div>
                 <input type="radio" id="female" name="sex" value="female" />
-                <label for="female" className="ml-4">
+                <label htmlFor="female" className="ml-4">
                   Female
                 </label>
               </div>
               <div>
                 <input type="radio" id="child" name="sex" value="child" />
-                <label for="child" className=" ml-4">
+                <label htmlFor="child" className=" ml-4">
                   Child
                 </label>
               </div>

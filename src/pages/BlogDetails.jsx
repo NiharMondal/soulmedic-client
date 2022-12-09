@@ -15,7 +15,6 @@ const BlogDetails = () => {
         );
 
         const json = await data.json();
-        console.log(json);
         const resource = await json?.Result?.Resources?.Resource;
 
         setblog(resource);
@@ -27,7 +26,7 @@ const BlogDetails = () => {
     fetchData();
   }, [topicId]);
 
-  console.log(blog);
+  
   return (
     <div className="container mx-auto">
       <div className="py-12">

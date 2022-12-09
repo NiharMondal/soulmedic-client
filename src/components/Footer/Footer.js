@@ -2,15 +2,14 @@ import { BsArrowUpRightSquareFill } from "react-icons/bs";
 import { FaUserAlt, FaRegCalendarAlt } from "react-icons/fa";
 import { TbMessages } from "react-icons/tb";
 import blogPicture from "../../assets/blog-new-8.jpg";
-import {  healthData } from "../../utils/dummyData/services";
+import { healthData } from "../../utils/dummyData/services";
 import { ContactInfo } from "../ContactInfo";
-import Map from "../Map";
+import  Map from "../Map";
 
 const containerStyle = {
   width: "100%",
   height: "300px",
 };
-
 
 export default function Footer() {
   return (
@@ -66,7 +65,7 @@ export default function Footer() {
             LOCATION MAP
           </h2>
           <div className="mt-8">
-            <Map containerStyle={containerStyle} />
+           <Map containerStyle={containerStyle}/>
           </div>
         </div>
         <ContactInfo header="CONTACT INFO" t_color="500" />
