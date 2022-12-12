@@ -4,9 +4,9 @@
 
 
 
-> Soulmedic made with Tailwind CSS and React.
-> Google Map
-> React Router Dom(v6.3.0)
+- > Soulmedic made with Tailwind CSS and React.
+- > Google Map
+- > React Router Dom(v6.3.0)
 
 
 # Notice
