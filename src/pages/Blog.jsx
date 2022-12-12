@@ -34,7 +34,7 @@ export default function Blog() {
     navigate(`/blog/${id}`)
   };
   return (
-    <div className="container mx-auto">
+    <section className="container mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-y-12 py-12">
         {blogs &&
           blogs.map((item, index) => {
@@ -86,6 +86,6 @@ export default function Blog() {
           })}
       </div>
       {loading && <Loading />}
-    </div>
+    </section>
   );
 }
