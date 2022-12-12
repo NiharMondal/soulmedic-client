@@ -34,6 +34,7 @@ export default function Blog() {
   };
   return (
     <React.Fragment>
+      <h1>From The Blog</h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4  py-12 ">
         {blogs &&
           blogs.map((item, index) => {
