@@ -5,6 +5,14 @@
 
 
 > Soulmedic made with Tailwind CSS and React.
+>> Google Map
+>> React Router Dom(v6.3.0)
+
+
+# Notice
+>> Back End will be added soon
+
+
 
 ![preview](public/souldemic.png)
 
