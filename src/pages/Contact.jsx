@@ -2,10 +2,7 @@ import React from "react";
 import { BookAppointment } from "../components/BookAppointment";
 import MessageBox from "../components/Contact/MessageBox";
 import { ContactInfo } from "../components/ContactInfo";
-
-
 import Map from "../components/Map";
-
 
 
 const containerStyle = {

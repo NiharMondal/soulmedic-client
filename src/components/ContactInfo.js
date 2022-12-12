@@ -1,10 +1,10 @@
 import React from "react";
 import { contactInfo } from "../utils/dummyData/services";
 
-export const ContactInfo = ({ header, t_color }) => {
+export const ContactInfo = ({ header, color }) => {
   return (
     <div className="text-gray-500">
-      <h2 className={` before:absolute before:bg-gray-200 before:h-px before:w-1/3 before:bottom-0 relative pb-2 ${t_color? `text-gray-${t_color}`: 'text-gray-700'}`}>
+      <h2 className={` before:absolute before:bg-gray-200 before:h-px before:w-1/3 before:bottom-0 relative pb-2 ${color? `text-gray-${color}`: 'text-gray-700'}`}>
         {header}
       </h2>
       <div className="grid grid-cols-1 divide-y mt-8">

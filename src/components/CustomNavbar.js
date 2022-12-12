@@ -14,7 +14,7 @@ export default function CustomNavbar() {
   const [nav, setNav] = useState(true);
 
   const changeSize = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 100) {
       setNav(false);
     } else {
       setNav(true);

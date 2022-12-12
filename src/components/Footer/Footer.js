@@ -68,10 +68,10 @@ export default function Footer() {
            <Map containerStyle={containerStyle}/>
           </div>
         </div>
-        <ContactInfo header="CONTACT INFO" t_color="500" />
+        <ContactInfo header="CONTACT INFO" color="500" />
       </div>
-      <div className="py-4 border-t-2 border-gray-200 md:flex md:justify-center">
-        Copyright © {new Date().getFullYear()} Soulmedic Theme All Rights
+      <div className="py-4 px-4 border-t-2 border-gray-200 md:text-center">
+        Copyright © {new Date().getFullYear()} Soulmedic Theme. All Rights
         Reserved | <span className="text-[#6FCBE9]">Nihar Mondal</span>
       </div>
     </div>
