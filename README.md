@@ -18,7 +18,7 @@
 - [Blog](https://soulmedic.vercel.app/blog)
 - [Events](https://soulmedic.vercel.app/events)
 - [Contact](https://soulmedic.vercel.app/appointments)
-- [Not Found](https://mui-react-dashboard.netlify.app/not-found)
+
 
 ## Getting started
 
