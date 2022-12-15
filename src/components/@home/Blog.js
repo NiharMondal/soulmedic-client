@@ -20,7 +20,7 @@ export default function Blog() {
 
         const json = await data.json();
         const resource = await json?.Result?.Resources?.Resource;
-        const sliceData = await resource?.slice(5, 8);
+        const sliceData = await resource?.slice( 7,10);
         setblogs(sliceData);
         setLoading(false);
       } catch (error) {
@@ -43,14 +43,9 @@ export default function Blog() {
               <BiMessageDetail />,
               <BsSoundwave />,
             ];
-            const time = [
-              "Nov 22",
-              "Jan 30",
-              "Mar 13",
-            ];
-            const year = ["2013", "2020", "2017", ];
+            const time = ["Nov 22", "Jan 30", "Mar 13"];
+            const year = ["2013", "2020", "2017"];
             const random = Math.floor(Math.random() * 3);
-            
 
             return (
               <div className="grid grid-cols-6 gap-x-1" key={index}>
@@ -68,7 +63,8 @@ export default function Blog() {
                     alt={item.ImageAlt}
                     className="h-[300px] md:h-[200px] w-full"
                   />
-                  <h2>{item.Title.slice(0, 20)}..</h2>
+
+                  <h2 className="text-slate-600 py-4">{item.Title}</h2>
                   <div className="grid justify-items-end ">
                     <button
                       className=" flex items-center text-[#4BBCD7] font-bold px-4 py-2 border transition  duration-300 ease-in-out border-[#4BBCD7] hover:bg-[#4BBCD7] hover:text-slate-200"

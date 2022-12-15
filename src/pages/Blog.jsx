@@ -71,7 +71,7 @@ export default function Blog() {
                     alt={item.ImageAlt}
                     className="h-[300px] md:h-[400px] w-full"
                   />
-                  <h2>{item.Title.slice(0, 48)}..</h2>
+                  <h2 className="text-slate-600 py-4">{item.Title}</h2>
                   <div className="grid justify-items-end ">
                     <button
                       className=" flex items-center text-[#4BBCD7] font-bold px-4 py-2 border transition  duration-300 ease-in-out border-[#4BBCD7] hover:bg-[#4BBCD7] hover:text-white"

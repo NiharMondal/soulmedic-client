@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import parse from "html-react-parser";
+
 import { useParams } from "react-router-dom";
 import { Loading } from "../components/Loading";
-
 const BlogDetails = () => {
   const { topicId } = useParams();
 
@@ -16,7 +17,6 @@ const BlogDetails = () => {
 
         const json = await data.json();
         const resource = await json?.Result?.Resources?.Resource;
-
         setblog(resource);
         setLoading(false);
       } catch (error) {
@@ -26,27 +26,27 @@ const BlogDetails = () => {
     fetchData();
   }, [topicId]);
 
-  
   return (
     <div className="container mx-auto">
-      <div className="py-12">
-      {blog &&
-        blog.map((item, index) => {
-         const subTitle = item?.Sections.section[2]?.Content;
-         return (
-           <div key={index}>
-             <img
-               src={item.ImageUrl}
-               alt={item.ImageAlt}
-               className="h-[300px] md:h-[700px] w-full"
-             />
-             <h2>{item.Title}</h2>
-             <code>{subTitle}</code>
-           </div>
-         );
-        })}
+      <div className="py-12 text-slate-600">
+        {blog &&
+          blog.map((item, index) => {
+            const subTitle = item?.Sections.section[1]?.Content;
+            return (
+              <div key={index}>
+                <img
+                  src={item.ImageUrl}
+                  alt={item.ImageAlt}
+                  className="h-[300px] md:h-[700px] w-full"
+                />
+                <h2>{item.Title}</h2>
+                <div>{parse(subTitle)}</div>
+                
+              </div>
+            );
+          })}
       </div>
-         {loading && <Loading/>}
+      {loading && <Loading />}
     </div>
   );
 };
